@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*!
+* HTMLFactory - SaaS Landing Bs5 v1.0.0 
+* Copyright 2013-2022 HTMLFactory
+* Licensed under MIT 
+*/
+
+body {
+  font-family: "Inter", sans-serif;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hero > div {
+  position: relative;
+}
+
+.hero.bg-overlay {
+  background-image: url("../images/bg-agency.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  height: auto;
+  min-height: 100vh;
+}
+
+.hero.bg-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  min-height: 100vh;
+  height: auto;
+  bottom: 0px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.icon-footer-social-link {
+  color: #f1f1f1;
+}
+
+.icon-footer-social-link:hover {
+  color: #eee;
+}
